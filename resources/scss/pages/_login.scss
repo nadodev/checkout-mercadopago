@@ -1,0 +1,36 @@
+.bodyLogin  {
+    &__conteudoSuperior{
+        background: $color-primary;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        padding-top: 55px;
+    }
+    &__conteudo {
+        max-width:1200px;
+        margin: 0 auto;
+    }
+
+    &__logo{
+        width: 100%;
+        text-align: center;
+
+        img{
+            max-width: 90%;
+            width: 350px;
+        }
+    }
+
+    &__intro{
+        margin-top: 3%;
+
+        p{
+            color: #FFF;
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

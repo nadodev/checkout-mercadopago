@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagamentoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/teste', function (Request $request) {
+   dd('teste');
+});
+
+
+
+Route::post('/process_payment',  [PagamentoController::class, 'process_payment']);
